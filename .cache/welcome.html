@@ -4,17 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        This is a header
-    </header>
+<body class="bg-[#e9e8e4] min-h-screen w-full relative flex flex-col items-center justify-center">
+    
 
-    <h1>Welcome to My Go Server!</h1>
-    <p>This is a simple Go server serving an HTML welcome page.</p>
-<footer>
-    This is a footer
-</footer>
+    <!-- Background blur -->
+    <div class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50" aria="hidden">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-red-800 to-red-400"></div>
+        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
+    </div>
+    <!-- /Background blur -->
+
+    <div class="w-3/4">
+        <div class="flex items-center">
+
+            <!-- Logo -->
+            <img class="size-24" src="/static/images/logo.png" />
+
+            <div class="font-inter">
+                <h1 class="text-red-500 font-extrabold text-2xl">Goat Framework</h1>
+                <p class="text-gray-800">The Go framework for application architects</p>
+            </div>
+            <!-- /Logo -->
+
+        </div>
+
+        <!-- Card Grid -->
+        <div class="grid grid-cols-2 w-full">
+
+            <!-- Documentation Card -->
+            <ui-card>
+                <div class="p-2 bg-red-100 rounded-full text-red-600">
+                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64c-30.37-38-80-64-208-64c-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96m0 0v288"/></svg>
+                </div>
+                <h2 class="font-inter font-bold text-gray-900 text-lg">Documentation</h2>
+                <p class="font-inter text-gray-800">Goat has fantastic documentation covering everything about the framework! Whether you are an experienced Golang developer, or a newcomer to the ecosystem, we recommend reading the Goat documentation from beginning to end.</p>
+            
 </body>
 </html>
 
+            <!-- /Documentation Card -->
+
+            <!-- Github Card -->
+            <div class="bg-white flex flex-col items-start p-4 rounded-lg shadow-lg space-y-2">
+    
+            
+</div>
+
+            <!-- /Github Card -->
+
+        </div>
+        <!-- /Card Grid -->
+
+    </div>
+</ui-layout>

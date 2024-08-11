@@ -1,4 +1,4 @@
-module github.com/goat-framework/goat-framework
+module github.com/goat-framework/goat
 
 go 1.22.5
 

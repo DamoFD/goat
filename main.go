@@ -1,6 +1,6 @@
 package main
 
-import "github.com/goat-framework/goat-framework/server"
+import "github.com/goat-framework/goat/server"
 
 func main() {
     server.Start()
